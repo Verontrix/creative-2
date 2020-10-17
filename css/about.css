@@ -1,0 +1,25 @@
+.profile {
+  float: center;
+  margin: 2em;
+}
+
+img {
+  width: auto;
+}
+
+
+.about-page {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+/* Mobile Screen */
+@media only screen and (min-width: 683px) {
+  .profile {
+    /* display: none;
+    position: absolute; /* */
+    bottom: 0;
+    float: right;
+    width: default;
+  }
+}

@@ -1,0 +1,150 @@
+
+/* Box-sizing reset: //w3bits.com/?p=3225*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  color: #fff;
+}
+
+body {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+
+#githubIcon {
+  width: 32px;
+}
+
+.smallPict {
+  float: left;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 1em;
+}
+
+/* Menu */
+.bg-dark {
+  background-color: #444 !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:focus:not(.disabled), .navbar-dark .navbar-nav .nav-link:hover:not(.disabled) {
+  color: #ffaa17;
+}
+
+.disabled:hover {
+  cursor: default;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Fixes width of images, so Resizing is not needed */
+img {
+  width: 100%;
+}
+
+/* Disclaimer colorizer */
+.disclaimer {
+  color: #ddd; /* Off White almost invisible */
+}
+
+.page {
+  background-color: #333;
+  height: 100%;
+}
+
+.content {
+  background-color: #333;
+}
+.extendToBottom {
+  height: 100vh
+}
+.content {
+  margin: 2em;
+}
+
+
+/* Large Screen */
+@media only screen and (min-width: 1024px) {
+  .page {
+    margin: 3em;
+  }
+}
+
+/* medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .page {
+    margin: 2em;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .page {
+    margin: 1.5em;
+  }
+}
+
+
+/* Masonry, default phone*/
+.masonry {
+  margin: 1.5EM AUTO;
+  max-width: 768px;
+  column-gap:1.5em;
+  /*column-count: 4;*/
+  /*column-gap: 1em;*/
+}
+
+.brick {
+  background-color: #333;
+  /* display: inline-block; */
+  padding: 1em;
+  margin: 0 0 1.5em;
+  /* width: 100%; */
+}
+
+/* Masonry Large Screen */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* clearfix handle floats */
+.clearfix {
+  overflow: auto;
+}
+
+/* Makign Cat Turn Orange */
+.catImg {
+  width: 32px;
+
+  height: 32px;
+
+  background: url("/images/cat.png") no-repeat;
+
+  display: inline-block;
+}
+.catImg:hover {
+  background:url("/images/cat-hover.png") no-repeat;
+}
