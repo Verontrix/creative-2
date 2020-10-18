@@ -1,0 +1,19 @@
+
+let breedList = "<div class='dropdown-col'>";
+let itemCount = 0;
+for (const prop in json.message)
+{
+	if (json.message[prop].length == 0)
+	{
+		breedList += "<a class='dropdown-item' href='#'>" + prop + "</a>";
+		itemCount++;
+		breedList += addColumnIfNeeded(itemCount);
+	}
+	else
+	{
+		breedList += "<a class='dropdown-item' href='#'>" + json.message[prop][0] + " " + prop + "</a>";
+		itemCount++;
+		breedList += addColumnIfNeeded(itemCount);
+	}
+}
+breedList +="</div>";

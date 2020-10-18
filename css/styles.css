@@ -168,3 +168,27 @@ img {
 .catImg:hover {
   background:url("/images/cat-hover.png") no-repeat;
 }
+
+
+/* Added for better dropdown menu */
+/* Columns */
+div.dropdown-multicol{
+  width: 35em;
+}
+div.dropdown-multicol>div.dropdown-col{
+  display:inline-block;
+  width: 32%;
+}
+
+/* Alternative Column Solution */
+.columns{
+    height: 300px;
+    overflow-y:scroll;
+}
+@media screen and (max-width: 991px){
+  .columns{
+      height: 200px;
+      overflow-y:scroll;
+  }
+
+}
