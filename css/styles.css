@@ -130,6 +130,26 @@ img {
   }
 }
 
+@media (min-width: 992px){
+  .dropdown-menu .dropdown-toggle:after{
+    border-top: .3em solid transparent;
+      border-right: 0;
+      border-bottom: .3em solid transparent;
+      border-left: .3em solid;
+  }
+  .dropdown-menu{
+    margin:0;
+  }
+  .megasubmenu{
+    left:100%; top:0; min-height: 100%; min-width:500px;
+  }
+  .dropdown-menu > li:hover .megasubmenu{
+    display: block;
+  }
+}
+
+
+
 /* clearfix handle floats */
 .clearfix {
   overflow: auto;
