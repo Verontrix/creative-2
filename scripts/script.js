@@ -89,7 +89,7 @@ function getDogBreedList()
 	}).then(function(json) {
 		console.log(json);
 
-		let breedList = "<div class='dropdown-col'>li><a class='dropdown-item' href='#'>random</a></li>";
+		let breedList = "<div class='dropdown-col'><li><a class='dropdown-item' href='#'>random</a></li>";
 		let itemCount = 0;
 		for (const prop in json.message)
 		{
